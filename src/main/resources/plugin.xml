@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+   <extension point="com.change_vision.astah.ui.actionSets">
+      <actionSet
+            label="%action_set_label"
+            visible="true"
+            id="com.change_vision.astah.lab.plugin.miro.actionSet">
+         <menu label="%menu_group" id="miro" path="tool/miro"></menu>
+         <action
+			   label="%menu_label_export_to_miro"
+               class="com.change_vision.astah.lab.plugin.miro.ExportToMiroAction"
+               tooltip="%menu_label_export_to_miro"
+               menubarPath="tool/miro/"
+               id="exportToMiro">
+         </action>
+         <action
+               label="%menu_label_import_from_miro"
+               class="com.change_vision.astah.lab.plugin.miro.ImportFromMiroAction"
+               tooltio="%menu_label_import_from_miro"
+               menubarPath="tool/miro/"
+               id="importFromMiro">
+         </action>
+     </actionSet>
+   </extension>
+</plugin>

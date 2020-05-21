@@ -1,0 +1,7 @@
+target/
+.DS_Store
+.idea
+*.iml
+*.ipr
+*.asta.lock
+stale_outputs_checked
