@@ -25,8 +25,7 @@ Create a configuration file `.astah-miro.json` under the home directory(`$HOME`)
 
 ```json
 {
-  "token": "Access Token",
-  "boardId": "Board Id"
+  "token": "Access Token"
 }
 ```
 

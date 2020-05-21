@@ -25,8 +25,7 @@ astah*とmiro間で図のインポート/エクスポートを可能にするプ
 
 ```json
 {
-  "token": "Access Token",
-  "boardId": "Board Id"
+  "token": "Access Token"
 }
 ```
 
