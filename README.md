@@ -1,27 +1,27 @@
 # astah-miro Plugin
 ## About
 
-The plugin that enables import/export of diagrams between Astah and miro.
+The Astah-miro plugin enables you to import/export diagrams between Astah and miro.
 
-Following items can be import/export.
-- Importing from miro
-    - class diagram
-    - mindmap
-- Exporting to miro
-    - class diagram
+Supported diagram types:
+- Import from miro
+    - UML Class diagram
+    - Mind map
+- Export to miro
+    - UML Class diagram
 
-*Note:* This plugin is an experimental version and is not provided product support. 
+*Note:* This plugin is an experimental version therefore no product support is provided. 
 
 ## How to install
 
 1. Download the .jar file from [releases](https://github.com/ChangeVision/astah-miro-plugin/releases).
-1. Start astah.
+1. Start Astah.
 1. Install the plugin at the Plugin List Dialog ([Plugin] -> [Installed Plugins] -> [Install])
-1. Restart astah.
+1. Restart Astah.
 
 ## Setup
 
-Create a configuration file `.astah-miro.json` under the home directory(`$HOME`) and edit the below contents.
+Create a configuration file `.astah-miro.json` under the home directory(`$HOME`) and edit the content below.
 
 ```json
 {
@@ -30,49 +30,52 @@ Create a configuration file `.astah-miro.json` under the home directory(`$HOME`)
 ```
 
 ### How to get an Access Token
-We assume that you have already created a miro account.
+First of all, you need to have a miro account.
 
 #### Step 1 - Get Developer Team
 
-Open this link to create a development team.
+Click this link to create a development team.
 
 https://miro.com/app/dashboard/?createDevTeam=1
 
 #### Step 2 - Create an App
 
 1. Open [this link](https://miro.com/app/settings/user-profile/apps)
-1. Click `[Create new app]` on the page that opens.
-1. Enter `App name` and `Description` in the dialog and click `[Create App]`.
+1. Click `[Create new app]` button on the page.
+1. Enter `App name` and `Description` in the dialog and click `[Create App]` to create an App.
 
 
 #### Step 3 - Set the app permissions and get the token
 
-1. Check the required permissions (`boards:read` and `boards:write`) from the middle of the page after Step2 in `OAuth scopes`.
+1. Now you will be taken to the page where you configure datiles of the App. Under `OAuth scopes`, enable these two permissions (`boards:read` and `boards:write`).
 1. Click `Install app to get OAuth token`.
-1. Click `[Install]` of the Team in the dialog.
-    - The team you select here will not be the `Dev team`, but the team whose board you actually want to work with Astah
-1. Add the displayed `Access Token`.
-    - Please don't expose the token displayed here.
-1. Edit the Access Token in `"token"` of `.astah-miro.json`.
+1. Click `[Install]` to the designated team you want to install this app to.
+    - Make sure you choose a team that has a board you want to connect with Astah instead of choosing `Dev team`.
+1. An `Access Token` will appear, copy this access token and save it somewhere.
+    - Do not expose this access token publicly.
+1. Add this Access Token to the `"token"` of `.astah-miro.json` file.
 
-See also: https://developers.miro.com/docs/getting-started#section-step-4-install-app-to-test-rest-api-or-web-plugin
+Reference: https://developers.miro.com/docs/getting-started#section-step-4-install-app-to-test-rest-api-or-web-plugin
 
 
 ## Usage
 
-### Import
+### How to import UML Class diagram from miro
 
-1. Open an empty diagram from miro's board with Astah (`[Diagram] -> [Class Diagram] or [Mind Map]`)
-1. `[Tools] -> [miro] -> [Import diagrams from miro]`
+1. Launch Astah and create an Class diagram (`[Diagram] -> [Class Diagram]`)
+1. Go to `[Tools] -> [miro] -> [Import diagrams from miro]`
 
-You must have the diagram open before you can import it.
 
-SysML is only support for mindmap.
+### How to import Mindmap diagram from miro
 
-### Export
+1. Launch Astah and create a Mindmap (`[Diagram] -> [Mindmap]`)
+1. Go to `[Tools] -> [miro] -> [Import diagrams from miro]`
 
-1. open the diagram you want to export to miro with Astah.
-1. `[Tools] -> [miro] -> [Export diagram to miro]`
+
+### How to export UML Class diagram to miro
+
+1. Launch Astah and open a UML Class diagram you want to export to miro
+1. Go to `[Tools] -> [miro] -> [Export diagram to miro]`
 
 
 ## License
