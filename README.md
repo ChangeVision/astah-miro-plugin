@@ -1,7 +1,7 @@
 # astah-miro Plugin
 ## About
 
-The plugin that enables import/export of diagrams between astah* and miro.
+The plugin that enables import/export of diagrams between Astah and miro.
 
 Following items can be import/export.
 - Importing from miro
@@ -50,7 +50,7 @@ https://miro.com/app/dashboard/?createDevTeam=1
 1. Check the required permissions (`boards:read` and `boards:write`) from the middle of the page after Step2 in `OAuth scopes`.
 1. Click `Install app to get OAuth token`.
 1. Click `[Install]` of the Team in the dialog.
-    - The team you select here will not be the `Dev team`, but the team whose board you actually want to work with astah*
+    - The team you select here will not be the `Dev team`, but the team whose board you actually want to work with Astah
 1. Add the displayed `Access Token`.
     - Please don't expose the token displayed here.
 1. Edit the Access Token in `"token"` of `.astah-miro.json`.
@@ -62,7 +62,7 @@ See also: https://developers.miro.com/docs/getting-started#section-step-4-instal
 
 ### Import
 
-1. Open an empty diagram from miro's board with astah* (`[Diagram] -> [Class Diagram] or [Mind Map]`)
+1. Open an empty diagram from miro's board with Astah (`[Diagram] -> [Class Diagram] or [Mind Map]`)
 1. `[Tools] -> [miro] -> [Import diagrams from miro]`
 
 You must have the diagram open before you can import it.
@@ -71,7 +71,7 @@ SysML is only support for mindmap.
 
 ### Export
 
-1. open the diagram you want to export to miro with astah*.
+1. open the diagram you want to export to miro with Astah.
 1. `[Tools] -> [miro] -> [Export diagram to miro]`
 
 
