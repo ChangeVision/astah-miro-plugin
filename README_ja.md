@@ -68,6 +68,8 @@ see also: https://developers.miro.com/docs/getting-started#section-step-4-instal
 
 ※SysMLはマインドマップのみの対応です
 
+※miroのボードに2個以上のマインドマップが存在するとインポートできません
+
 ### エクスポート
 
 1. miroへエクスポートしたい図をastah*で開く

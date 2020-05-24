@@ -71,6 +71,8 @@ Reference: https://developers.miro.com/docs/getting-started#section-step-4-insta
 1. Launch Astah and create a Mindmap (`[Diagram] -> [Mindmap]`)
 1. Go to `[Tools] -> [miro] -> [Import diagrams from miro]`
 
+*Note:* Cannot import if miro board has more than one mind map
+
 
 ### How to export UML Class diagram to miro
 
