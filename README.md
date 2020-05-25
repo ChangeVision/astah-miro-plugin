@@ -10,6 +10,8 @@ Supported diagram types:
 - Export to miro
     - UML Class diagram
 
+*Note:* Some expressions such as attributes and operations of class diagrams are not supported.
+
 *Note:* This plugin is an experimental version therefore no product support is provided. 
 
 ## How to install
@@ -47,7 +49,7 @@ https://miro.com/app/dashboard/?createDevTeam=1
 
 #### Step 3 - Set the app permissions and get the token
 
-1. Now you will be taken to the page where you configure datiles of the App. Under `OAuth scopes`, enable these two permissions (`boards:read` and `boards:write`).
+1. Now you will be taken to the page where you configure details of the App. Under `OAuth scopes`, enable these two permissions (`boards:read` and `boards:write`).
 1. Click `Install app to get OAuth token`.
 1. Click `[Install]` to the designated team you want to install this app to.
     - Make sure you choose a team that has a board you want to connect with Astah instead of choosing `Dev team`.
